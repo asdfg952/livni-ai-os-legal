@@ -1,0 +1,96 @@
+LIVNI AI OS – Privacy Policy
+Last updated: October 29, 2026
+
+1. Who we are
+LIVNI AI OS is a privately operated software tool used internally to analyze the TikTok account of LIVNI.
+
+LIVNI is a sole proprietorship operated by Karin Maria Odenman, Sweden.
+LIVNI AI OS is owned, developed and administered by Mikael Lindqvist, Sweden, who is responsible for its technical development, operation and administration. Karin Maria Odenman has given Mikael Lindqvist explicit permission to connect LIVNI's TikTok account, manage the integration and analyze the account's statistics.
+Contact for all questions about this policy and requests concerning data: micke.lindqvist@icloud.com.
+
+2. Purpose and scope
+The tool is used to analyze statistics for LIVNI's own TikTok account in order to evaluate content performance and plan future content. It is not offered to the public. Only TikTok accounts whose holder has authorized the connection can be connected; currently this is LIVNI's account.
+
+3. TikTok permissions
+The tool uses TikTok Login Kit and the TikTok Display API with the following read-only permissions:
+
+Permission	Used for
+user.info.basic	Identifying the connected account (open ID, display name).
+user.info.stats	Account statistics: follower, following, likes and video counts.
+video.list	Listing the account's public videos and their statistics.
+The tool never publishes, modifies or deletes content on TikTok.
+
+4. What data is processed
+Data is obtained from TikTok's API after the account holder has authorized the connection, or entered manually by the system owner.
+
+Account information: TikTok open ID (stored only in encrypted form, for authentication) and display name.
+Account statistics: follower, following, total likes and video counts, recorded over time.
+Public video metadata: video ID, publication time, title, description, hashtags extracted from the description, duration and share link.
+Public video statistics: views, likes, comments and shares, recorded over time.
+Manually imported statistics (for example saves, average watch time, completion rate and follower count).
+Synchronization logs: time of each synchronization, number of videos and new measurements, error codes and the permissions granted. Logs never contain tokens or secrets.
+Authentication data: TikTok access and refresh tokens.
+The tool does not collect the content of comments, the identities of viewers or followers, private videos, drafts, direct messages or advertising data.
+
+5. Storage and security
+All data is stored locally on the system owner's computer. There is no cloud database.
+Access tokens, refresh tokens and the TikTok application secret are encrypted with Windows Data Protection (DPAPI), bound to the system owner's Windows user account, and stored outside the analytics data folders.
+Folders containing TikTok data are restricted to the system owner's Windows user account.
+The tool's interface is only reachable from the system owner's own computer (127.0.0.1). The tool contains no third-party analytics, advertising or telemetry, and only contacts TikTok's official API.
+TikTok data is excluded from version control and is not published.
+These measures reduce risk but cannot rule out every threat, for example malicious software running under the system owner's own user account.
+
+6. How long data is kept
+Data	Maximum retention
+Account statistics	12 months from each measurement
+Video statistics	12 months from each measurement
+Video metadata	12 months after the video was last seen on the account
+Synchronization logs	12 months from each entry
+Copies of manual imports	30 days
+Access and refresh tokens	Only while the connection is valid
+How retention is enforced. The tool warns 30 days before statistics, metadata or logs reach their retention limit (7 days before for import copies). Data that has passed its limit is no longer used for analysis and is hidden in the tool's TikTok statistics view; other parts of the tool, such as the general document overview, may continue to list it until it has been removed. Synchronization, import and analysis are blocked until it has been removed. Removal is not automatic: it is carried out by the system owner with the tool's deletion function, which requires a preview and an explicit confirmation.
+
+Tokens are deleted when the account is disconnected. Tokens whose refresh period has expired are deleted automatically the next time the tool checks the connection status.
+
+If the TikTok developer agreement ends, the integration is blocked and all data obtained through TikTok's services is deleted without undue delay, using the same deletion function.
+
+7. Use of AI providers
+Current status: not active. No TikTok data is shared with any AI provider.
+
+The safeguards in place are: (a) the tool's analysis report refuses to release TikTok statistics for AI analysis until it has been explicitly enabled; (b) the AI coding assistant Claude Code, which the system owner uses in the same folder, is configured to deny reading the TikTok data folders and secrets; and (c) written rules prohibit AI assistants, including OpenAI Codex, from reading TikTok data. Safeguard (c) is an instruction rather than a technical barrier.
+
+Planned: AI models from Anthropic (Claude) and/or OpenAI (Codex) may in future be used to help analyze aggregated, pseudonymized statistics that use internal publication IDs only. TikTok video IDs, links, account names and video descriptions would not be shared. This will only start after verification against TikTok's terms and explicit approval by both Karin Maria Odenman and Mikael Lindqvist, and this policy will be updated before it starts. Anthropic and OpenAI are therefore planned, not current, recipients of TikTok data.
+
+8. Sharing
+Data is not sold, rented or shared with third parties, except communication with TikTok's API that is needed to operate the connection, and disclosure where required by law.
+
+9. International transfers
+The tool stores data locally on the system owner's computer and does not itself transfer TikTok data to other countries.
+
+To operate the connection, the tool exchanges requests and authorization data with TikTok's API. TikTok's own handling of data is described in TikTok's privacy policy and terms; this policy makes no statement about where or how TikTok processes data.
+
+If the planned use of AI providers is enabled, data may be processed outside the EU/EEA, for example in the United States. Before that happens, this section will be updated with the recipients and the transfer safeguards relied on.
+
+10. Revoking access and requesting deletion
+Revoke access: use "Disconnect" in the tool, which revokes the authorization at TikTok and deletes stored tokens, or remove the app under Settings → Security → Manage app permissions in TikTok.
+When disconnecting, the tool also offers to delete all stored TikTok data. Nothing is deleted without explicit confirmation.
+Request deletion: email micke.lindqvist@icloud.com. Deletion is carried out with the tool's deletion function, which can delete statistics, metadata, logs and import copies. Each deletion is recorded in an audit log that does not contain the deleted data.
+11. Your rights
+To the extent the EU General Data Protection Regulation (GDPR) applies, you have the right to:
+
+request access to the personal data processed about you;
+request rectification of inaccurate data;
+request erasure of your data;
+request restriction of processing;
+object to processing;
+receive your data in a portable format, where this right applies.
+Send requests to micke.lindqvist@icloud.com. Requests are normally answered within one month of receipt. That period may be extended in the cases permitted by the GDPR, in which case you will be informed, and the rights are subject to the exceptions set out in applicable law. No automated decision-making with legal or similarly significant effects takes place.
+
+You may also lodge a complaint with the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY), www.imy.se.
+
+12. Changes
+This policy is updated whenever the processing changes, and in particular before any AI provider is enabled. The date at the top shows the latest version.
+
+© 2026 LIVNI AI OS
+
+Terms of Service
